@@ -93,12 +93,6 @@ namespace Screenshot_Manager
         [return: MarshalAs(UnmanagedType.Bool)]
         static extern bool GetWindowRect(IntPtr hWnd, out RECT lpRect);
 
-        private IntPtr GetActiveWindow()
-        {
-            IntPtr handle = IntPtr.Zero;
-            return GetForegroundWindow();
-        }
-
         private string GetActiveWindowTitle()
         {
             const int nChars = 256;
