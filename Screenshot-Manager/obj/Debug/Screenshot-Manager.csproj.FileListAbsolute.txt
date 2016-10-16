@@ -1,0 +1,9 @@
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\bin\Debug\Screenshot-Manager.exe.config
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\bin\Debug\Screenshot-Manager.exe
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\bin\Debug\Screenshot-Manager.pdb
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot-Manager.csprojResolveAssemblyReference.cache
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot_Manager.Properties.Resources.resources
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot-Manager.csproj.GenerateResource.Cache
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot-Manager.exe
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot-Manager.pdb
+c:\users\erik\documents\visual studio 2015\Projects\Screenshot-Manager\Screenshot-Manager\obj\Debug\Screenshot_Manager.Form1.resources
