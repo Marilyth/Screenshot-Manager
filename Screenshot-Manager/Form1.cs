@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Media;
 using System.IO;
 using System.Runtime.InteropServices;
@@ -63,12 +63,11 @@ namespace Screenshot_Manager
  
             Rectangle capture = new Rectangle(location.Left, location.Top, location.Right-location.Left, location.Bottom-location.Top);
 
-            Rectangle bounds = capture;
-            using (Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height))
+            using (Bitmap bitmap = new Bitmap(capture.Width, capture.Height))
             {
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
-                    g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
+                    g.CopyFromScreen(new Point(capture.Left, capture.Top), Point.Empty, capture.Size);
                 }
                 string test = GetActiveWindowTitle();
                 if (!Directory.Exists(textBox1.Text + GetActiveWindowTitle())) Directory.CreateDirectory(textBox1.Text + GetActiveWindowTitle());
