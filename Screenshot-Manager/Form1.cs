@@ -45,8 +45,8 @@ namespace Screenshot_Manager
             if (m.Msg == 0x0312)
             {
 
-                Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);                  // The key of the hotkey that was pressed.
-                KeyModifier modifier = (KeyModifier)((int)m.LParam & 0xFFFF);       // The modifier of the hotkey that was pressed.
+                Keys key = (Keys)(((int)m.LParam >> 16) & 0xFFFF);
+                KeyModifier modifier = (KeyModifier)((int)m.LParam & 0xFFFF);
                 int id = m.WParam.ToInt32();
 
                 saveActiveScreen();
