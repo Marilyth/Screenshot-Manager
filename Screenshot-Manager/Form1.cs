@@ -60,7 +60,7 @@ namespace Screenshot_Manager
         {
             RECT location = new RECT();
             GetWindowRect(GetActiveWindow(), out location);
-
+ 
             Rectangle capture = new Rectangle(location.Left, location.Top, location.Right-location.Left, location.Bottom-location.Top);
 
             Rectangle bounds = capture;
@@ -70,16 +70,12 @@ namespace Screenshot_Manager
                 {
                     g.CopyFromScreen(new Point(bounds.Left, bounds.Top), Point.Empty, bounds.Size);
                 }
+                string test = GetActiveWindowTitle();
                 if (!Directory.Exists(textBox1.Text + GetActiveWindowTitle())) Directory.CreateDirectory(textBox1.Text + GetActiveWindowTitle());
                 bitmap.Save(textBox1.Text + $"{GetActiveWindowTitle()}\\ {DateTime.Now.ToString("dd-MM-yyyy HH mm ss")}.png", ImageFormat.Png);
                 Bitmap bitmapCopy = bitmap.Clone(new Rectangle(0, 0, bitmap.Width, bitmap.Height), PixelFormat.DontCare);
-                pictureBox1.Image = (Image)(new Bitmap(bitmapCopy, 200, 113));
+                panel1.BackgroundImage = (Image)(new Bitmap(bitmapCopy, 452, 254));
             }
-        }
-
-        private void sortThumbNail(Image screenshot)
-        {
-            pictureBox1.Image = screenshot;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,7 +107,7 @@ namespace Screenshot_Manager
 
             if (GetWindowText(handle, Buff, nChars) > 0)
             {
-                return Buff.ToString();
+                return Buff.ToString().Trim(Path.GetInvalidPathChars());
             }
             return null;
         }
