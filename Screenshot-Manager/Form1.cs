@@ -77,11 +77,6 @@ namespace Screenshot_Manager
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            saveActiveScreen();
-        }
-
         [DllImport("user32.dll")]
         static extern IntPtr GetForegroundWindow();
 
